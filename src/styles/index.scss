@@ -1,0 +1,9 @@
+@import './utils/variables';
+body{
+    margin:0;
+    font-family: montserrat;
+}
+
+h1{
+    color:$primary-color
+}
