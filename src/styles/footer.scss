@@ -1,0 +1,27 @@
+@import './utils/variables';
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $black-color;
+    height: 209px;
+
+.logo-footer {
+        margin-top: 69px;
+        width: 122px;
+        height: 39.44px;
+        
+
+    }
+    p{
+    
+font-size: 24px;
+font-weight: 500;
+line-height: 34.22px;
+text-align: center;
+color: $white-color;
+margin-bottom: 29px;
+    }
+}

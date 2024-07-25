@@ -1,9 +1,9 @@
-import '../styles/banner.scss'
+import '../styles/bannerhome.scss'
 import DefaultPicture from '../assets/IMG.png'
-function Banner() {
+function BannerHome() {
     return (
         <div>
-            <section>
+            <section className='banner-container'>
                 <p>Chez vous, partout et ailleurs</p>
                 
 
@@ -15,4 +15,4 @@ function Banner() {
     
 }
 
-export default Banner
+export default BannerHome

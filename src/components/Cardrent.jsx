@@ -1,28 +1,23 @@
 import '../styles/cardrent.scss'
-import '../datas/logements.json'
 import logements from '../datas/logements.json'
-//const locations= logements
-console.log(logements);
-
+import { Link } from 'react-router-dom'
 
 function Cardrent () {
     
-    
-
-
-
     return(
-        <div>
-            <figure>
-                <img src="" alt="" />
-                <p>{logements.map(({title}) => title
-    
-    
-                )}</p>
-            </figure>
-
+            <Link to='logement'>
+        <div className='card-rent'>
+        {logements.map(({id,title,cover}) => 
+        <picture key={id}>
+                <img src={cover} alt="" />
+                <p>
+                {title}
+                </p>
+            </picture>
+)}
         </div>
-    )
+            </Link>
     
+    )
 }
 export default Cardrent

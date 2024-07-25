@@ -1,7 +1,12 @@
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
 function Logement() {
     return (
-        <div></div>
+        <div>
+            <Header/>
+            <Footer/>
+        </div>
     )
     
 }

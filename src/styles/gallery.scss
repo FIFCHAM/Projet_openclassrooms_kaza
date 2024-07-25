@@ -1,7 +1,17 @@
 @import './utils/variables';
 figure{
     display: flex;
+    justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
     background-color: $grey-color;
+    margin-top: 43px;
+    border-radius: 25px;
 }
+/*figure {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    }*/

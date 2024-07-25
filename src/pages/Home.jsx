@@ -1,13 +1,15 @@
 import '../styles/index.scss';
 import Header from '../components/Header';
-import Banner from '../components/Banner';
+import BannerHome from '../components/BannerHome';
 import Gallery from '../components/Gallery';
+import Footer from '../components/Footer';
 function Home() {
     return (
         <div>
             <Header/>
-            <Banner/>
+            <BannerHome/>
             <Gallery/>
+            <Footer/>
         </div>
     )
     

@@ -1,7 +1,19 @@
-import '../styles/index.scss'
+
+import BannerAbout from '../components/BannerAbout'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Values from '../components/Values'
 function About() {
     return (
-        <h1>page à propos</h1>
+        <div>
+            <Header/>
+            <BannerAbout/>
+            <Values/>
+
+            <Footer/>
+
+        </div>
+
     )
     
 }

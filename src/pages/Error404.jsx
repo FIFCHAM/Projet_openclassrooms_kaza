@@ -1,6 +1,12 @@
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+
 function Error404() {
     return (
-        <div></div>
+        <div>
+            <Header/>
+            <Footer/>
+        </div>
     )
     
 }

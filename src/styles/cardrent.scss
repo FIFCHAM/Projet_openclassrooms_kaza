@@ -1,0 +1,43 @@
+.card-rent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    row-gap: 50px;
+    margin-top: 56px;
+    justify-content: center;
+  /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+    margin-top: 56px;*/
+    picture{
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        
+        img {
+            height: 340px;
+            max-width: 340px;
+            border-radius: 10px;
+        }
+        
+        p {
+            
+            
+            position: absolute;
+            max-width: 340px;
+            font-family: montserrat;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25.67px;
+            text-align: left;
+            margin-left: 10px;
+            color: #FFFFFF;
+
+        }
+    }
+
+
+
+}
