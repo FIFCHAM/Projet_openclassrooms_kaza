@@ -1,23 +1,22 @@
 import '../styles/cardrent.scss'
-import logements from '../datas/logements.json'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 
-function Cardrent () {
+function Cardrent ({id,cover,title}) {
     
     return(
-            <Link to='logement'>
-        <div className='card-rent'>
-        {logements.map(({id,title,cover}) => 
+        <div className="card-rent" >
         <picture key={id}>
-                <img src={cover} alt="" />
+            
+                <img src={cover} alt="interieur des logements" />
                 <p>
                 {title}
                 </p>
+
             </picture>
-)}
         </div>
-            </Link>
     
-    )
+)
 }
 export default Cardrent
+//</Link>
+//<Link to='logement'>

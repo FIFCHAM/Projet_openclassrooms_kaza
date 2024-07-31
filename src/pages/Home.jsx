@@ -1,13 +1,22 @@
 import '../styles/index.scss';
 import Header from '../components/Header';
-import BannerHome from '../components/BannerHome';
+import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import DefaultPicture from '../assets/IMG.png'
 function Home() {
     return (
         <div>
             <Header/>
-            <BannerHome/>
+            <Banner>
+            <section className='banner-container'>
+                <p>Chez vous, partout et ailleurs</p>
+                
+
+                <img src={DefaultPicture} alt="mer et falaises" />
+                
+            </section>
+            </Banner>
             <Gallery/>
             <Footer/>
         </div>

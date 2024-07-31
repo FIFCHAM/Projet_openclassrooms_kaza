@@ -1,27 +1,28 @@
 import '../styles/values.scss'
-function Values() {
-    return(
-        <div className="values-container">
-            <article>
-                <p>Fiabilité</p>
-                <i className="fa-solid fa-chevron-up"></i>
-            </article>
-            <article>
-                <p>Respect</p>
-                <i className="fa-solid fa-chevron-up"></i>
-            </article>
-            <article>
-                <p>Service</p>
-                <i className="fa-solid fa-chevron-up"></i>
-            </article>
-            <article>
-                <p>Sécurité</p>
-                <i className="fa-solid fa-chevron-up"></i>
-            </article>
+import { descriptionvalue } from '../datas/DescriptionValues';
+import Collapse from './Collapse'
 
-        </div>
-    )
+
+function Values() {
+   
+        
     
+    //const [isOpen,setIsopen]= useState(true)
+    return (
+        
+        <div>
+
+            {descriptionvalue.map(({title,id,description})=>
+                
+            <div key={id} className="values-container">
+                <Collapse title={title} description={description}/>
+             
+            </div>
+           
+            
+            )}
+            </div>
+        )
 }
 
 export default Values

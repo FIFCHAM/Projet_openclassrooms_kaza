@@ -1,0 +1,43 @@
+@import '../styles/utils/variables';
+
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 410.69px;
+        text-align: center;
+        color: $primary-color;
+        
+
+    }
+
+    p {
+        
+margin: 0;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51.34px;
+        text-align: left;
+        color: $primary-color;
+
+    }
+
+    a {
+        margin-top: 139px;
+        margin-bottom: 139px;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+        text-align: left;
+        color: $black-color;
+
+    }
+}
