@@ -1,10 +1,11 @@
 import '../styles/carrousel.scss'
-function Carrousel(pictures) {
+function Carrousel(props) {
+    
     return(
         <div>
 
         <div className="carrousel-container">
-            <img src={pictures} alt="interieur de l'appartement" />
+            <img src={props.picture} alt="interieur de l'appartement" />
         </div>
         </div>
     )

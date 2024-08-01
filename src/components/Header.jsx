@@ -1,25 +1,27 @@
 import DefaultPicture from '../assets/LOGO.png'
 import '../styles/header.scss'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
-    return (
+    
+    return  (
+        
         
         
         <div>
             <header>
             
-            <Link to='/'>
+            <NavLink to='/'>
             <img src={DefaultPicture} alt="logo kasa" />
-            </Link>
+            </NavLink>
             <nav>
                 <ul>
-                    <Link to="/">
-                    <li>Accueil</li>
-                    </Link>
-                    <Link to='/about'>
+                    <NavLink  to="/">
+                    <li >Accueil</li>
+                    </NavLink>
+                    <NavLink to='/about'>
                     <li>A Propos</li>
-                    </Link>
+                    </NavLink>
                 </ul>
                 
             </nav>
@@ -31,7 +33,7 @@ function Header() {
         </div>
         
         
-
+    
 
     )
     

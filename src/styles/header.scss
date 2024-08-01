@@ -18,13 +18,13 @@ header {
     }
 
     li {
-        
+
 
         list-style-type: none;
         color: $black-color;
     }
 
-    
+
 
     img {
         width: 210.32px;
@@ -33,7 +33,17 @@ header {
 
 
     }
-a{
-    text-decoration: none;
-}
+
+    a {
+        //border-bottom: 2px solid $white-color;
+        text-decoration: none;
+    }
+
+    a.active {
+        text-decoration: underline;
+        color:  $black-color;
+
+
+    }
+
 }

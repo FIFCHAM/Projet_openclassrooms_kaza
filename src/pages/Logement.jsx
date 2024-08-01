@@ -3,10 +3,16 @@ import Header from "../components/Header"
 import LogementCard from "../components/Logement-card"
 
 function Logement() {
+    
+
+
     return (
         <div>
             <Header/>
             <LogementCard/>
+     
+        
+              
         
          <Footer/>
         </div>

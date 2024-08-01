@@ -1,7 +1,12 @@
 
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Values from '../components/Values'
+import '../styles/values.scss'
+import Collapse from '../components/Collapse'
+import { descriptionvalue } from '../datas/DescriptionValues';
+
+
+//import Values from '../components/Values'
 import DefaultPicture from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
 import Banner from '../components/Banner'
 function About() {
@@ -14,7 +19,15 @@ function About() {
 
         </div>
             </Banner>
-            <Values/>
+            {descriptionvalue.map(({title,id,description})=>
+                
+            <div key={id} className="values-container">
+                <Collapse title={title} description={description}/>
+             
+            </div>
+           
+            
+            )}
 
             <Footer/>
 
