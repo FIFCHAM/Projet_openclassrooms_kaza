@@ -1,4 +1,4 @@
-import Cardrent from './Cardrent'
+import Gallerycard from '../components/Gallerycard'
 import '../styles/gallery.scss'
 import logements from '../datas/logements.json'
 import { Link } from 'react-router-dom'
@@ -11,7 +11,7 @@ function Gallery() {
             {logements.map(({id,cover,title})=>
             <figure  key={id}>
                 <Link to={`/logement/${id}         `}>
-            <Cardrent id={id} title={title} cover={cover}/>
+            <Gallerycard id={id} title={title} cover={cover}/>
 
             </Link>
             </figure>

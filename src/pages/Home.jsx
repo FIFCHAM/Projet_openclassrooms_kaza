@@ -5,12 +5,13 @@ import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import DefaultPicture from '../assets/IMG.png'
 function Home() {
+    const title = "Chez vous, partout et ailleurs"
     return (
         <div>
             <Header/>
-            <Banner>
+            <Banner image={DefaultPicture} alt="mer et falaises" titre={title}>
             <section className='banner-container'>
-                <p>Chez vous, partout et ailleurs</p>
+                <h1 titre={title}></h1>
                 
 
                 <img src={DefaultPicture} alt="mer et falaises" />

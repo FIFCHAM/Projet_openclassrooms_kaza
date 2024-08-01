@@ -1,15 +1,15 @@
-import '../styles/cardrent.scss'
+import '../styles/gallerycard.scss'
 //import { Link } from 'react-router-dom'
 
-function Cardrent ({id,cover,title}) {
+function Gallerycard (props) {
     
     return(
         <div className="card-rent" >
-        <picture key={id}>
+        <picture key={props.id}>
             
-                <img src={cover} alt="interieur des logements" />
+                <img src={props.cover} alt="interieur des logements" />
                 <p>
-                {title}
+                {props.title}
                 </p>
 
             </picture>
@@ -17,6 +17,6 @@ function Cardrent ({id,cover,title}) {
     
 )
 }
-export default Cardrent
+export default Gallerycard
 //</Link>
 //<Link to='logement'>

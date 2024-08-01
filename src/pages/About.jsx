@@ -8,7 +8,7 @@ function About() {
     return (
         <div>
             <Header/>
-            <Banner>
+            <Banner image={DefaultPicture} alt="montagnes et rivieres">
             <div className='bannerabout-container'>
             <img src={DefaultPicture} alt="montagnes et rivieres" />
 

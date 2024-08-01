@@ -1,13 +1,17 @@
 import '../styles/banner.scss'
 
 // eslint-disable-next-line react/prop-types
-function Banner({children}) {
+function Banner(props) {
     return (
-        <div>
-            {children}
+        <div className='banner-container'>
+            {props.titre && (
+                <h1>{props.titre}</h1>
+            )}
+            <img src={props.image} alt={props.alt}  />
         </div>
     )
     
 }
+
 
 export default Banner

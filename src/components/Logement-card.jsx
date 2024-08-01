@@ -21,7 +21,7 @@ function LogementCard() {
     }
     return(
         <div>
-    <Carrousel/>
+    <Carrousel picture={picture}/>
         </div>
     )
 

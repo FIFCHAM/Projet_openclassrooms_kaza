@@ -8,8 +8,10 @@ function Header() {
         
         <div>
             <header>
-
+            
+            <Link to='/'>
             <img src={DefaultPicture} alt="logo kasa" />
+            </Link>
             <nav>
                 <ul>
                     <Link to="/">
