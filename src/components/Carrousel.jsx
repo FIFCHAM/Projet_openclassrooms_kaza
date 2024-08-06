@@ -1,10 +1,35 @@
 import '../styles/carrousel.scss'
 
-import  arrow_back from '../assets/arrow_back.svg'
-import  arrow_forward from '../assets/arrow_forward.svg'
 import {useState} from 'react'
-function Carrousel({pictures, alt}) {
+function Carrousel({pictures, alt,}) {
     const [currentIndex, setCurrentIndex] = useState(0);
+     
+
+    function DeleteChevron(pictures) {
+        if (pictures === 1) {
+            return '';
+          }
+          return 'fa-solid ';
+          
+        
+    }
+
+    function DeleteNumber(pictures) {
+        if (pictures === 1) {
+          return '';
+          }
+          return 'carrousel-figure-number';
+        }
+    
+        
+
+    const getClassname = (index) => {
+      if (index === currentIndex) {
+        return 'carrousel-figure-active';
+      }
+      return '';
+    }
+
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? pictures.length - 1 : currentIndex - 1;
@@ -21,14 +46,26 @@ function Carrousel({pictures, alt}) {
         <div className="carrousel-container">
             <figure className="carrousel-figure" >
 
-            {pictures.slice().reverse().map((image, index) => (
-                <img key={index} src={image} alt={alt} className='img-carrousel'/>
+            {pictures.map((image, index) => (
+                <img key={index} src={image} alt={alt} className={getClassname(index)}/>
                 
             ))}
-            <img src={arrow_back} alt="arrow_back"  className="arrow arrow-back"  onClick={goToPrevious}  />
+            <div className={DeleteChevron(pictures.length)}>
+            <i className='fa-solid fa-chevron-left ' onClick={goToPrevious}/>
+            <i className='fa-solid fa-chevron-right' onClick={goToNext}/>
 
-            <img src={arrow_forward} alt="arrow_forward"  className="arrow arrow-forward"  onClick={goToNext}  />
-            <span></span>
+            </div>
+
+            
+            
+                
+                <span  className={DeleteNumber(pictures.length)}>
+                    {currentIndex + 1} / {pictures.length}
+                
+            </span>
+            
+
+                
             </figure>
             
         </div>
