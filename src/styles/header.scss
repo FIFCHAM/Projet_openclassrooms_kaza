@@ -9,27 +9,57 @@ header {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 45px;
+@media  (max-width: 710px){
+    display: flex;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+@media  (max-width: 320px){
+    display: flex;
+    flex-direction: column;
+}
 
-
-    ul {
-        display: flex;
-        gap: 57px;
-        @include nav
+ul {
+    display: flex;
+    gap: 57px;
+    @include nav;
+    @media  (max-width: 490px){
+        padding: 0;
+        gap: 11px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17.11px;
+        text-align: right;
+        margin-left: 24px;
+        text-transform: uppercase;
     }
-
-    li {
-
-
-        list-style-type: none;
-        color: $black-color;
+    @media  (max-width: 320px){
+        margin-left: 0;
+        
     }
+}
+
+li {
+    
+    list-style-type: none;
+    color: $black-color;
+    
+}
 
 
 
-    img {
-        width: 210.32px;
-        height: 68px;
-        //color: $primary-color;
+img {
+    width: 210.32px;
+    height: 68px;
+    //color: $primary-color;
+    @media  (max-width: 550px){
+    
+    width: 145px;
+    height: 47px;
+        
+    }
 
 
     }

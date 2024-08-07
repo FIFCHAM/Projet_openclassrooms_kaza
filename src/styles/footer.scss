@@ -7,6 +7,11 @@
     flex-direction: column;
     background-color: $black-color;
     height: 209px;
+    @media  (max-width:490px){
+    justify-content:flex-start;
+     
+        
+    }
 
 .logo-footer {
         margin-top: 66px;
@@ -24,5 +29,14 @@ text-align: center;
 color: $white-color;
 margin-bottom: 29px;
 margin-top: 28px;
+@media  (max-width: 490px){
+    margin: 0;
+    width: 31%;
+font-size: 12px;
+font-weight: 500;
+line-height: 17.11px;
+text-align: center;
+
+}
     }
 }
