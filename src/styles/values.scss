@@ -1,5 +1,6 @@
 @import '../styles/utils/variables';
-.values-container{
+
+.values-container {
     display: flex;
     flex-direction: column;
     margin-left: 208.5px;
@@ -8,4 +9,9 @@
     margin-top: 38px;
     margin-bottom: 38px;
 
+    @media (max-width: 1024px) {
+        margin: 20px 20px 20px 20px;
+
+
+    }
 }

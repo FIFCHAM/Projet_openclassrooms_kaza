@@ -1,4 +1,4 @@
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,24 +9,28 @@
     border-radius: 25px;
     background-color: black;
     height: 223px;
-    @media  (max-width: 710px){
+
+    @media (max-width: 1024px) {
         margin-left: 20px;
         margin-right: 20px;
-        
-        
-    }
-    @media  (max-width: 490px){
-        margin-top: 27px;
-            border-radius: 10px;
-            justify-content: flex-start;
-height: 111px;
+
 
     }
-    @media  (max-width: 320px){
-        margin-top: 10px;
-        
+
+    @media (max-width: 490px) {
+        margin-top: 27px;
+        border-radius: 10px;
+        justify-content: flex-start;
+        height: 111px;
+
     }
-    h1{
+
+    @media (max-width: 320px) {
+        margin-top: 10px;
+
+    }
+
+    h1 {
         position: absolute;
         font-family: montserrat;
         font-size: 48px;
@@ -34,37 +38,39 @@ height: 111px;
         line-height: 68.45px;
         text-align: left;
         color: #FFFFFF;
-        
+
         margin: 0;
         z-index: 3;
         text-shadow: 4px 4px 8px black;
-        @media  (max-width: 490px){
+
+        @media (max-width: 490px) {
             margin-left: 16px;
-font-size: 24px;
-font-weight: 700;
-line-height: 24px;
-text-align: left;
-width: 70%;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            width: 70%;
 
         }
     }
-    
 
-        img{
-            z-index: 2;
-            border-radius: 25px;
-            height: inherit;
-            width: 100%;
-            opacity: 60%;
-            box-shadow: 0px 4px 4px 0px #00000040;
 
-            @media  (max-width: 490px){
-                border-radius: 10px;
-            }
-        
+    img {
+        z-index: 2;
+        border-radius: 25px;
+        height: inherit;
+        width: 100%;
+        opacity: 60%;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
+        @media (max-width: 490px) {
+            border-radius: 10px;
+        }
+
     }
-    
+
 }
+
 /*.bannerabout-container{
     display: flex;
     margin-left: 100px;

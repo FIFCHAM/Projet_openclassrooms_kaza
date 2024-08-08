@@ -13,7 +13,7 @@ function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
   if (!logement) {
-    return <Error404/>;
+    return <Error404 />;
   }
   const equipments = logement.equipments.map((equipment, index) => (
     <li key={index}>{equipment}</li>

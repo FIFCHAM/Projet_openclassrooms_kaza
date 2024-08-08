@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
     h1 {
         margin-bottom: 50px;
         margin-top: 50px;
@@ -14,18 +14,36 @@
         line-height: 410.69px;
         text-align: center;
         color: $primary-color;
-        
+
+        @media (max-width: 500px) {
+
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 136.9px;
+            text-align: center;
+
+
+        }
+
 
     }
 
     p {
-        
-margin: 0;
+
+        margin: 0;
         font-size: 36px;
         font-weight: 500;
         line-height: 51.34px;
-        text-align: left;
+        text-align: center;
         color: $primary-color;
+
+        @media (max-width: 500px) {
+            width: 80%;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25.67px;
+            text-align: center;
+        }
 
     }
 
@@ -38,6 +56,16 @@ margin: 0;
         line-height: 25.67px;
         text-align: left;
         color: $black-color;
+
+        @media (max-width: 500px) {
+
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19.96px;
+            text-align: left;
+
+
+        }
 
     }
 }

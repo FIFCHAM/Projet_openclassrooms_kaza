@@ -1,23 +1,31 @@
 @import '../styles/utils/variables';
-.carrousel-container{
-    display: flex;
-    
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  
+
+.carrousel-container {
+  display: flex;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
   overflow: hidden;
   box-sizing: border-box;
-  @media (max-width: 900px){
+
+  @media (max-width: 1024px) {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0;
-    
+
   }
-  
-  
-  .carrousel-figure{
+
+  @media (max-width: 500px) {
+    margin-top: 27px;
+    margin-bottom: 15px;
+
+  }
+
+
+  .carrousel-figure {
     display: flex;
     margin: 0;
     position: relative;
@@ -25,83 +33,107 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    @media (max-width: 900px){
-      
+
+    @media (max-width: 1024px) {
+
       align-items: flex-start;
     }
-    
-    img{
+
+    @media (max-width: 500px) {
+      height: 255px;
+
+    }
+
+    img {
       position: absolute;
       height: 415px;
       width: 100%;
       object-fit: cover;
       overflow: hidden;
-      border-radius: 25px ;
+      border-radius: 25px;
       opacity: 0;
       transition: 0.5s ease-in-out;
-      &.carrousel-figure-active{
-        
-        
+
+      &.carrousel-figure-active {
+
+
         opacity: 1;
       }
-      @media (max-width: 900px){
+
+      @media (max-width: 500px) {
         height: 255px;
-        
+        border-radius: 10px;
+
+
       }
     }
-    
-    .fa-solid{
-     .fa-chevron-left{
-      left: 23px;
-      bottom: 180px;
-      font-size: 79px;
-      color: $white-color;
-      position: absolute;
-      
-        
+
+    .fa-solid {
+      .fa-chevron-left {
+        left: 23px;
+        bottom: 180px;
+        font-size: 46px;
+        color: $white-color;
+        position: absolute;
+
+
       }
-     .fa-chevron-right{
+
+      .fa-chevron-right {
         right: 23px;
         bottom: 180px;
-        font-size: 79px;
-      color: $white-color;
-      position: absolute;
-      
-        
+        font-size: 46px;
+        color: $white-color;
+        position: absolute;
+
+
       }
-      @media (max-width: 900px){
-       .fa-chevron-left{
+
+      @media (max-width: 500px) {
+        .fa-chevron-left {
           left: 10px;
-          bottom: 260px;
-          font-size: 39px;
+          bottom: 110px;
+          font-size: 19px;
           font-weight: lighter;
-          
-            
-          }
-         .fa-chevron-right{
-            right: 10px;
-            bottom: 260px;
-            font-size: 39px;
-          
-            
-          }
-        
+
+
+        }
+
+        .fa-chevron-right {
+          right: 10px;
+          bottom: 110px;
+          font-size: 19px;
+
+
+        }
+
       }
     }
-    .carrousel-figure-number{
 
-    position: absolute;
-    bottom: 25px;
-    right: 50%;
-    
-    color: $white-color;
-    
-font-size: 18px;
-font-weight: 500;
-line-height: 25.67px;
-text-align: center;
+    .carrousel-figure-number {
+
+      position: absolute;
+      bottom: 25px;
+      right: 50%;
+
+      color: $white-color;
+
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      text-align: center;
+
+      @media (max-width: 500px) {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17.11px;
+        text-align: center;
+        right: 44%;
+        bottom: 15px;
+
+      }
 
     }
 
-}
+  }
 }
