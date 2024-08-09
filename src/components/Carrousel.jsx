@@ -1,4 +1,5 @@
 import "../styles/carrousel.scss";
+import PropTypes from "prop-types";
 
 import { useState } from "react";
 function Carrousel({ pictures, alt }) {
@@ -60,3 +61,7 @@ function Carrousel({ pictures, alt }) {
   );
 }
 export default Carrousel;
+Carrousel.propTypes = {
+  pictures: PropTypes.array,
+  alt: PropTypes.string,
+};

@@ -1,5 +1,5 @@
 import "../styles/gallerycard.scss";
-//import { Link } from 'react-router-dom'
+import PropTypes from "prop-types";
 
 function Gallerycard(props) {
   return (
@@ -12,5 +12,8 @@ function Gallerycard(props) {
   );
 }
 export default Gallerycard;
-//</Link>
-//<Link to='logement'>
+Gallerycard.propTypes = {
+  id: PropTypes.string,
+  title: PropTypes.string,
+  cover: PropTypes.string,
+};

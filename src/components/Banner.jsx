@@ -1,4 +1,5 @@
 import "../styles/banner.scss";
+import PropTypes from "prop-types";
 
 // eslint-disable-next-line react/prop-types
 function Banner(props) {
@@ -11,3 +12,8 @@ function Banner(props) {
 }
 
 export default Banner;
+Banner.propTypes = {
+  titre: PropTypes.string,
+  image: PropTypes.string,
+  alt: PropTypes.string,
+};

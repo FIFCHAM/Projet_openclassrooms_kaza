@@ -11,11 +11,7 @@ function About() {
   return (
     <div>
       <Header />
-      <Banner image={DefaultPicture} alt="montagnes et rivieres">
-        <div className="bannerabout-container">
-          <img src={DefaultPicture} alt="montagnes et rivieres" />
-        </div>
-      </Banner>
+      <Banner image={DefaultPicture} alt="montagnes et rivieres" />
       {descriptionvalue.map(({ title, id, description }) => (
         <div key={id} className="values-container">
           <Collapse title={title} description={description} />

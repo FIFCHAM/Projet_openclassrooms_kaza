@@ -13,13 +13,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Banner image={DefaultPicture} alt="mer et falaises" titre={title}>
-        <section className="banner-container">
-          <h1 titre={title}></h1>
-
-          <img src={DefaultPicture} alt="mer et falaises" />
-        </section>
-      </Banner>
+      <Banner image={DefaultPicture} alt="mer et falaises" titre={title} />
       <div className="gallery-container">
         {logements.map(({ id, cover, title }) => (
           <figure key={id}>
